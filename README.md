@@ -1,13 +1,18 @@
 # NLP-Based Document Understanding & Semantic Search Platform
-**This project demonstrates how to build RAG systems that fail safely, remain auditable, and are deployable in real production environments.**
 
-A production‑minded **Retrieval‑Augmented Generation (RAG)** system for document understanding and semantic search.
-This project ingests documents (PDFs), chunks and embeds them, performs vector‑based semantic retrieval (FAISS/Chroma), and generates **grounded answers** using an LLM with **explicit citations and relevance gating**.
-
+#### This project demonstrates how to build RAG systems that fail safely, remain auditable, and are deployable in real production environments.
 ---
 ## Architecture Overview
 
 ![RAG Architecture](docs/rag_architecture.png)
+
+---
+## What This System Does
+
+A production-minded Retrieval-Augmented Generation (RAG) system for document understanding and semantic search.
+
+It ingests documents (PDFs), chunks and embeds them, performs vector-based semantic retrieval (FAISS/Chroma), and generates **grounded answers** using an LLM with **explicit citations and relevance gating**.
+
 
 ---
 ## Key Features
@@ -144,6 +149,15 @@ Possible next steps:
 * Authentication & access control
 * CI + tests
 * UI layer
+
+---
+
+## RAG Design Tradeoffs & Considerations
+
+- Why relevance gating is critical for production RAG
+- How deduplication prevents citation spam
+- Tradeoffs between FAISS and Chroma
+- Why retrieval and reasoning must be separated
 
 ---
 
